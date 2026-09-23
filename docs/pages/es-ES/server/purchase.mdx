@@ -80,23 +80,24 @@ Los servidores comprados se facturan mensualmente a una tarifa fija. El precio q
 
 ### ¿Cómo renuevo mi servidor manualmente?
 
-Los servidores se renuevan automáticamente: el sistema lo comprueba aproximadamente cada 8 horas y cobra de tu saldo antes de la fecha de vencimiento, por lo que solo necesitas mantener saldo suficiente y un método de pago válido en tu cuenta.
+Los servidores se renuevan automáticamente de forma predeterminada: el sistema lo comprueba aproximadamente cada 8 horas y cobra de tu saldo antes de la fecha de vencimiento. Para proteger tu servidor y tus datos, mantén activada la renovación automática y asegúrate de tener saldo suficiente o un método de pago válido en tu cuenta. Las renovaciones se cobran al precio del plan vigente en el momento de la renovación.
 
 Para renovar manualmente, ve a **Dashboard → Servers** y haz clic en tu servidor: el botón **Renovar Ahora** está justo al lado de la fecha de vencimiento en la página de resumen del servidor. También está disponible como **Renovar** en el menú "⋯" de cada tarjeta de servidor en la lista.
 
-Si una renovación falla por saldo insuficiente, el servidor se apaga temporalmente pero no se elimina. Después de recargar (o corregir tu método de pago), la siguiente comprobación automática completa la renovación y vuelve a encender el servidor, o puedes hacer clic en **Renovar Ahora** de inmediato.
+Si una renovación falla por saldo insuficiente, el servidor se apaga temporalmente pero no se elimina durante el período de gracia. Después de recargar (o corregir tu método de pago), la siguiente comprobación automática completa la renovación y vuelve a encender el servidor, o puedes hacer clic en **Renovar Ahora** de inmediato. Renueva lo antes posible cuando recibas un aviso para que el servidor no se elimine al terminar el período de gracia.
 
 ### ¿Cuánto tiempo se conserva un servidor vencido antes de eliminarse?
 
-Si la renovación no se completa antes de la fecha de vencimiento, el servidor no se elimina de inmediato:
+Cuando un servidor vence, se apaga y se conserva durante un período de gracia para que puedas regularizar el pago. El período de gracia es de aproximadamente **3 a 15 días** según el proveedor. Las fechas reales de apagado y eliminación son las indicadas en los avisos por correo electrónico de Zeabur y las que se muestran en la página del servidor; si esta página y un correo no coinciden, prevalece el correo. Al terminar el período de gracia, el servidor y todos los proyectos en él se eliminan permanentemente y no se pueden recuperar.
 
-- **Dentro de 1 día después del vencimiento**: el servidor sigue funcionando.
-- **1 día después del vencimiento**: el servidor se apaga y se envía un aviso por correo electrónico. Tus datos permanecen intactos, y completar la renovación lo vuelve a poner en línea.
-- **7 días después del vencimiento**: el servidor y todos los proyectos en él se eliminan permanentemente y no se pueden recuperar.
+El período de gracia actual de cada proveedor es el siguiente (los días se cuentan desde la fecha de vencimiento):
 
-Para los servidores de Tencent Cloud y Alibaba Cloud, la retención sigue la política de recuperación del propio proveedor (aproximadamente 15 días). El botón de renovar en el dashboard está disponible hasta que termina el período de retención.
+| Proveedor | Apagado | Último aviso | Eliminación |
+| --- | --- | --- | --- |
+| AWS, GCP, Hetzner, Linode, Digital Ocean | 1 día después del vencimiento | 5 días después del vencimiento | 7 días después del vencimiento |
+| Tencent Cloud, Aliyun, Volcengine | Al vencer | — | Aproximadamente 15 días después del vencimiento |
 
-
+Completar la renovación dentro del período de gracia vuelve a poner el servidor en línea con sus datos intactos. Los períodos de gracia pueden cambiar según las políticas de los proveedores, y Zeabur se reserva el derecho de ajustar el mecanismo del período de gracia. Para evitar la pérdida de datos, renueva en cuanto recibas un aviso en lugar de esperar al último día del período de gracia.
 
 ### ¿Qué proveedores están disponibles?
 

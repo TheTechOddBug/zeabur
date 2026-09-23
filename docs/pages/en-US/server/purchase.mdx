@@ -80,23 +80,24 @@ Purchased servers are billed monthly at a fixed rate. The price shown on the sel
 
 ### How do I renew my server manually?
 
-Servers renew automatically: the system checks roughly every 8 hours and charges your balance before the expiry date, so all you need to do is keep enough balance and a valid payment method on your account.
+Servers renew automatically by default: the system checks roughly every 8 hours and charges your balance before the expiry date. To protect your server and its data, keep auto-renew enabled and make sure you have enough balance or a valid payment method on your account. Renewals are charged at the plan price in effect at the time of renewal.
 
 To renew manually, go to **Dashboard → Servers** and click your server — the **Renew Now** button is right next to the expiry date on the server's overview page. It is also available as **Renew** in the "⋯" menu on each server card in the server list.
 
-If a renewal fails due to insufficient balance, the server is temporarily powered off but not deleted. After you top up (or fix your payment method), the next automatic check completes the renewal and powers the server back on — or you can click **Renew Now** right away.
+If a renewal fails due to insufficient balance, the server is temporarily powered off but is not deleted during the grace period. After you top up (or fix your payment method), the next automatic check completes the renewal and powers the server back on — or you can click **Renew Now** right away. Please renew as soon as you receive a notice so the server is not deleted when the grace period ends.
 
 ### How long is an expired server kept before deletion?
 
-If renewal doesn't complete by the expiry date, the server is not deleted immediately:
+After a server expires, it is powered off and kept for a grace period so you can settle the balance. The grace period is roughly **3 to 15 days** depending on the provider. The actual power-off and deletion dates are the ones stated in the email notices from Zeabur and shown on the server page; if this page and an email disagree, the email takes precedence. Once the grace period ends, the server and all projects on it are permanently deleted and cannot be recovered.
 
-- **Within 1 day after expiry**: the server keeps running.
-- **1 day after expiry**: the server is powered off and an email notice is sent. Your data remains intact, and completing the renewal brings it back online.
-- **7 days after expiry**: the server and all projects on it are permanently deleted and cannot be recovered.
+The current grace period for each provider is as follows (days are counted from the expiry date):
 
-For Tencent Cloud and Alibaba Cloud servers, retention follows the provider's own reclamation policy (roughly 15 days). The Renew button in the dashboard is available until the retention period ends.
+| Provider | Power-off | Final notice | Deletion |
+| --- | --- | --- | --- |
+| AWS, GCP, Hetzner, Linode, Digital Ocean | 1 day after expiry | 5 days after expiry | 7 days after expiry |
+| Tencent Cloud, Aliyun, Volcengine | At expiry | — | About 15 days after expiry |
 
-
+Completing the renewal within the grace period brings the server back online with its data intact. Grace periods may change along with provider policies, and Zeabur reserves the right to adjust the grace period mechanism. To avoid data loss, renew as soon as you receive a notice rather than waiting until the last day of the grace period.
 
 ### What providers are available?
 
