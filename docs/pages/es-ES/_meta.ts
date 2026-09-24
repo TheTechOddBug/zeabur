@@ -11,7 +11,6 @@ export default {
 
   // ── Productos ────────────────────────────────────────────────────────────
   '---2---': { type: 'separator' },
-  'ai-hub':           'AI Hub',
   domain:             'Dominio',
   email:              'Email',
   'wonder-mesh':      'Wonder Mesh',

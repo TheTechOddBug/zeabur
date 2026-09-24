@@ -54,15 +54,15 @@ function captureShareButtonClicked(props: {
 
 const SHARE_MESSAGES: Record<string, string> = {
   'en-US':
-    'Purchase servers or AI Hub credits at {{url}} — enter my referral code "{{code}}" at checkout to enjoy {{discount}}% off!',
+    'Purchase servers at {{url}} — enter my referral code "{{code}}" at checkout to enjoy {{discount}}% off!',
   'zh-TW':
-    '在 {{url}} 購買伺服器或 AI Hub 額度，結帳時輸入我的推薦碼「{{code}}」，即可享受 {{discount}}% 折扣優惠～',
+    '在 {{url}} 購買伺服器，結帳時輸入我的推薦碼「{{code}}」，即可享受 {{discount}}% 折扣優惠～',
   'zh-CN':
-    '在 {{url}} 购买服务器或 AI Hub 额度，结账时输入我的推荐码「{{code}}」，即可享受 {{discount}}% 折扣优惠～',
+    '在 {{url}} 购买服务器，结账时输入我的推荐码「{{code}}」，即可享受 {{discount}}% 折扣优惠～',
   'ja-JP':
-    '{{url}} でサーバーや AI Hub クレジットを購入する際、チェックアウトで紹介コード「{{code}}」を入力すると {{discount}}% オフになります！',
+    '{{url}} でサーバーを購入する際、チェックアウトで紹介コード「{{code}}」を入力すると {{discount}}% オフになります！',
   'es-ES':
-    'Compra servidores o créditos de AI Hub en {{url}} — ingresa mi código de referencia "{{code}}" al pagar y obtén {{discount}}% de descuento.',
+    'Compra servidores en {{url}} — ingresa mi código de referencia "{{code}}" al pagar y obtén {{discount}}% de descuento.',
 }
 
 const SHARE_LABEL: Record<string, string> = {

@@ -66,6 +66,18 @@ export default withNextra({
         destination: 'https://zeabur.com/:locale/templates',
         permanent: true,
       },
+      // AI Hub has been shut down — send old docs links to the shutdown
+      // announcement instead of 404ing.
+      {
+        source: '/ai-hub/:path*',
+        destination: 'https://zeabur.com/changelogs/aihub-shutdown',
+        permanent: true,
+      },
+      {
+        source: '/:locale/ai-hub/:path*',
+        destination: 'https://zeabur.com/:locale/changelogs/aihub-shutdown',
+        permanent: true,
+      },
       {
         source: '/guides/go/go',
         destination: '/guides/go',
